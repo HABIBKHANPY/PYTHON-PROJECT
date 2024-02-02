@@ -1,1 +1,343 @@
-BANO QABIL WORK EXAMPLE
+
+-----------------------------------------------------
+print("              if else")
+ a=int(input("Enter your number:"))
+ if a%2==0:
+     print("The given number is an even number")
+ else:
+     print("Yor given number is odd")
+
+-----------------------------------------------------
+ print("                only if ")
+ num1=int(input("Enter your first number:"))
+ num2=int(input("Enter your Second number:"))
+ num3=int(input("Enter your Third number:"))
+-----------------------------------------------------
+ if num1>num2 and num1>num3:
+     print("Your First number is the Greatest");
+ if num2>num3 and num2>num1:
+     print("Your Second number is the Greatest");
+ if num3>num1 and num3>num2:
+     print("Your Third number is the Greatest");
+------------------------------------------------------
+# print(              "if and else")
+ age=int(input("Enter your age:"))
+
+ if age>=18:
+   print("You are eligible to vote")
+ else:
+   print("You are not eligible to vote")
+------------------------------------------------------
+print("                if elif else"  )
+ number= int(input("Enter a number:"))
+ if number==10:
+   print("Your given number is 10")
+ elif number==50:
+   print("Your given number is 50")
+ elif number==20:
+   print("Your given number is 20")
+ elif number==70:
+   print("Your given number is 70")
+ else:
+   print("Your given number is not 10,20,50 or 70")
+-------------------------------------------------------
+ print("                for loop")
+ languages=["Urdu","English","Arabic", "Pashto", "Hindi"]
+ for language in languages:
+   print(language)
+------------------------------------------------------
+#print("                While Loop")
+ num=0
+ while num <10:
+   print(f"number is {num}")
+   num=num+1
+------------------------------------------------------
+ print("                  math.sqrt")
+ import math
+ x= math.sqrt(4)
+ print("Your answer is:", x)
+-------------------------------------------------------
+ print("                   math.ceilfloor")
+ import math
+ x= math.ceil(1.4)
+ y=math.floor(1.4)
+ print("Your answer is:",x)
+-------------------------------------------------------
+print("                    Function")
+ def fun():
+     print("AJ ka kam")
+ fun()
+-------------------------------------------------------
+ print("                  Function with argument)
+
+ def add (a,b):
+   return a+b
+ def istrue (a):
+   return bool (a)
+
+ res=add(2,3)
+ print("Result of add function is {} ".format (res))
+ res=istrue (2<5)
+ print("\nresult of istrue function is {}".format(res))
+-----------------------------------------------------------
+ print("                Function with default argument to find age")
+ ages={"Salman":15, "Ahmed":16, "Ali":17, "Asghar": 29}
+ print (ages["Asghar"])
+-----------------------------------------------------------
+
+  print("                Function with default argument to print studnets names")
+ ages={"Salman":15, "Ahmed":16, "Ali":17, "Asghar": 29}
+ for students in ages:
+   print (students)
+-----------------------------------------------------------
+
+ print("                    Arrays")
+ ages= [23,25,24,27,28]
+ print("All ages:",ages)
+-----------------------------------------------------------
+  print("                Indexing")
+languages=["Urdu","English","Arabic", "Pashto", "Hindi"]
+print(languages[3])
+
+  print("                Slicing Indexing")
+alpha=["a","b","c", "d", "e","f","g","h", "i", "j"]
+print(alpha[3:7])
+----------------------------------------------------------
+print("Class and Object")
+
+class Bike:
+    name=""
+    gear=0
+
+bike1=Bike()
+
+bike1.gear=11
+bike1.name="Honda"
+
+print(f"Name: {bike1.name}, Gear:{bike1.gear}")
+
+bike2=Bike()
+
+bike2.gear=5
+bike2.name="Mountain Bike"
+
+print(f"Name: {bike2.name}, Gear:{bike2.gear}")
+
+
+print("Class and Object Example 2")
+
+------------------------------------------------------------
+
+class Five:
+    name=""
+    age=0
+
+student1= Five()
+
+student1.name="Salman"
+student1.age=12
+
+print(f"Name:{student1.name}, Age:{student1.age}")
+
+
+student2= Five()
+
+student2.name="Ahmed"
+student2.age=13
+
+print(f"Name:{student2.name}, Age:{student2.age}")
+
+student3=Five()
+
+
+student3.name="Ibrahim"
+student3.age=14
+
+
+print(f"Name:{student3.name}, Age{student3.age}")
+
+===========================================================
+class Human:
+  attr1="Human"
+  attr2="Student"
+
+  def fun (self):
+   print("I'm a", self.attr1)
+   print("I'm a", self.attr2)
+
+
+Salman=Human()
+
+print(Salman.attr1)
+Salman.fun()
+
+
+class Class:
+  attr1="Human"
+  attr2="Student"
+
+  def fun (self):
+   print("I'm a", self.attr1)
+   print("I'm a", self.attr2)
+
+
+Salman=Class()
+
+print(Salman.attr1)
+Salman.fun()
+
+
+========================================================
+
+
+class Python:
+  def _init_ (self, name, company):
+
+      self.name= name
+      self.company=company
+  def show (self):
+      print("Hello my name is " + self.name + " and I work in " + self.company + ".")
+obj = Python   ("Salman","Bano Qabil")
+obj.show()
+
+--------------------------------------------------------
+
+
+# Sample class with init method
+class Person:
+  # init method or constructor
+  def _init_(self, name):
+    self.name = name
+  # Sample Method
+  def say_hi(self):
+    print('Hello, my name is', self.name)
+p = Person('Ghufran')
+p.say_hi()
+
+---------------------------------------------------------
+
+
+# define a class
+class Employee:
+    # define an attribute
+    employee_id = 0
+
+# create two objects of the Employee class
+employee1 = Employee()
+employee2 = Employee()
+
+# access attributes using employee1
+employee1.employeeID = 1001
+print(f"Employee ID: {employee1.employeeID}")
+
+# access attributes using employee2
+employee2.employeeID = 1002
+print(f"Employee ID: {employee2.employeeID}")
+
+-----------------------------------------------------------
+
+
+class python:
+  def _init_(self,name,company):
+      self.name=name
+      self.company=company
+  def show(self):
+      print("Hello my name is "+self.name + " and I " +" work in "+self.company+".")
+obj=python("Hassan", "Bano Qabil")
+obj.show()
+
+------------------------------------------------------------
+
+
+class Room:
+  length=0.0
+  breadth=0.0
+
+  def calculate_area (self):
+      print("Area of Room=", self.length*self.breadth)
+
+study_room=Room()
+study_room.length=42.5
+study_room.breadth=30.8
+study_room.calculate_area()
+
+-----------------------------------------------------------
+
+class Employee:
+  __id=0
+  __name=""
+  __gender=""
+  __city=""
+  __salary=0
+  def setData(self):
+      self.__id=int(input("Enter Id:\t"))
+      self.__name = input("Enter Name:\t")
+      self.__gender = input("Enter Gender:\t")
+      self.__city = input("Enter City:\t")
+      self.__salary = int(input("Enter Salary:\t"))
+  def showData(self):
+      print("Id\t\t:",self.__id)
+      print("Name\t:", self.__name)
+      print("Gender\t:", self.__gender)
+      print("City\t:", self.__city)
+      print("Salary\t:", self.__salary)
+
+
+def main():
+  #Employee Object
+  emp=Employee()
+  emp.setData()
+  emp.showData()
+
+-------------------------------------------------------------
+
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=int(input("Enter c:"))
+if a>b and a>c:
+   print("form the above three nuber given a is larger")
+if b>a and b>c:
+     print("form the above three nuber given b is larger")
+if c>a and c>b:
+     print("form the above three nuber given c is larger")
+-------------------------------------------------------------
+number=0
+while number<=10:
+    print(f"number is  {number}!")
+    number = number+ 1
+-------------------------------------------------------------
+age=int(input("Enter age"))
+if age>=18:
+    print("Your are eligible to vate!!")
+else:
+    print("Sorry! you have to wait!!")
+-------------------------------------------------------------
+num=int(input("enter the number:"))
+if num%2==0:
+print("The given number is an even number")
+-------------------------------------------------------------
+languages=['swift','python','Go','javascript']
+
+# run a loop for each item of the list 
+for language in languages:
+    print(language)
+-------------------------------------------------------------
+#DECLERRING A FUNCTION
+def fun():
+    print("bano qabiL")
+#DRIVER CODE
+#CALLING A FUNCTION
+fun()  
+fun()
+-------------------------------------------------------------
+num2=5 
+print(num1,'is of type',type(num1))
+num2=2.0
+print(num2,'is of type',type(num2))
+num3=1+2j
+print(num3,'is of type',type(num3))
+-------------------------------------------------------------
+
+
+if _name=="main_":
+  main()
