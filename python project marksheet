@@ -1,0 +1,36 @@
+print("<<---BANO QABIL MARKSHEET--->>")
+"""
+80>= "A"
+70>= "B"
+60>= "C"
+50>= "D"
+>=40 "E"
+>=30 "FALL"
+Reapear
+"""
+e =int(input("Inter The Marks For English :"))
+u =int(input("Inter The Marks For Urdu :"))
+m =int(input("Inter The Marks For MATH :"))
+p =int(input("Inter The Marks For Physics :"))
+ps =int(input("Inter The Marks For Pak studies :"))
+
+total=e+u+m+p+ps
+print("Total Obtain Marks:",total)
+percentage = total*100/500
+print("Percentage % :",percentage)
+
+if percentage>=80:
+    Grade="A"
+elif percentage>=70:
+    Grade="B"
+elif percentage>=60:
+    Grade="C"
+elif percentage>=50:
+    Grade="D"
+elif percentage>=40:
+    Grade="E"
+elif percentage>=30:
+    Grade="FALL"
+esle:Grade="Reapear"
+
+print("Grade:",Grade)
