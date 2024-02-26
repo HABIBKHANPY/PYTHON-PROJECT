@@ -10,7 +10,13 @@ selected_page = st.sidebar.radio("", ["MAGIC 8 BALL GAME", "About Us", "Contact"
 if selected_page == "MAGIC 8 BALL GAME":
     st.title("BANO QABIL 2.0 PROJECT")
     st.title("MAGIC 8 BALL")
-
+        # Add address book functionality here
+elif selected_page == "About Us":
+    st.title("About Us")
+    st.write(f"This address book application was created by {name}.")
+elif selected_page == "Contact":
+    st.title("Contact")
+    st.write("For support, please email support@example.com.")
 # Magic 8 Ball answers
 responses = [
     "It is certain.",
@@ -50,14 +56,13 @@ def main():
     }
         .stButton>button {
     color: #404040; /* Change text color to DodgerBlue */
-    border-radius: 10px; /* Make corners less rounded */
+    border-radius: 20px; /* Make corners less rounded */
     border-color: #32CD32; /* Change border color to LimeGreen */
     background-color: #FFD700; /* Change background color to Gold */
     font-size: 20px; /* Increase font size */
     padding: 10px 20px; /* Add more padding for a larger button */
     border-width: 2px; /* Make the border thicker */
     border-style: solid; /* Ensure the border is solid */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
         }
         
@@ -77,12 +82,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    # Add address book functionality here
-elif selected_page == "About Us":
-    st.title("About Us")
-    st.write(f"This address book application was created by {name}.")
-elif selected_page == "Contact":
-    st.title("Contact")
-    st.write("For support, please email support@example.com.")
     
