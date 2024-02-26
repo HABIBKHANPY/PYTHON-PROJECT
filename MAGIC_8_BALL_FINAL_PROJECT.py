@@ -3,13 +3,6 @@ import random
 st.balloons()
 st.snow()
 
-
-
-
-
-# Get user's name
-name = st.text_input("Enter your name:")
-
 # Sidebar menu
 st.sidebar.title("Menu")
 selected_page = st.sidebar.radio("", ["Address Book", "About Us", "Contact"])
@@ -23,22 +16,7 @@ elif selected_page == "About Us":
 elif selected_page == "Contact":
     st.title("Contact")
     st.write("For support, please email support@example.com.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 # Magic 8 Ball answers
 responses = [
     "It is certain.",
