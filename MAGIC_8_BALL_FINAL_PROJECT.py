@@ -8,7 +8,8 @@ st.sidebar.title("Menu")
 selected_page = st.sidebar.radio("", ["Address Book", "About Us", "Contact"])
 
 if selected_page == "Address Book":
-    st.title("Address Book")
+    st.title("BANO QABIL 2.0 PROJECT")
+    st.title("MAGIC 8 BALL")
 
 # Magic 8 Ball answers
 responses = [
@@ -66,9 +67,6 @@ def main():
 }
         </style>
         """, unsafe_allow_html=True)
-
-    st.title("BANO QABIL PROJECT")
-    st.title("MAGIC 8 BALL")
 
     # Text input for the question
     question = st.text_input("Ask a question:")
