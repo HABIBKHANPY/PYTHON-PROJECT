@@ -5,9 +5,9 @@ st.snow()
 
 # Sidebar menu
 st.sidebar.title("Menu")
-selected_page = st.sidebar.radio("", ["Address Book", "About Us", "Contact"])
+selected_page = st.sidebar.radio("", ["MAGIC 8 BALL GAME", "About Us", "Contact"])
 
-if selected_page == "Address Book":
+if selected_page == "MAGIC 8 BALL GAME":
     st.title("BANO QABIL 2.0 PROJECT")
     st.title("MAGIC 8 BALL")
 
