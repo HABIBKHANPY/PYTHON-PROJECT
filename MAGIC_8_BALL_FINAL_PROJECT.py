@@ -62,7 +62,6 @@ def main():
 
     st.title("BANO QABIL PROJECT")
     st.title("MAGIC 8 BALL")
-    color: #FFFFFF;
 
     # Text input for the question
     question = st.text_input("Ask a question:")
