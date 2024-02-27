@@ -10,7 +10,6 @@ selected_page = st.sidebar.radio("", ["MAGIC 8 BALL GAME", "About Us", "Contact"
 if selected_page == "MAGIC 8 BALL GAME":
     st.title("BANO QABIL 2.0 PROJECT")
     st.title("MAGIC 8 BALL")
-        # Add address book functionality here
 elif selected_page == "About Us":
     st.title("About Us")
     st.write(f"This address book application was created by {name}.")
@@ -40,7 +39,6 @@ responses = [
     "Outlook not so good.",
     "Very doubtful."
 ]
-
 def main():
     # Custom CSS to inject into the webpage
     st.markdown("""
@@ -65,7 +63,6 @@ def main():
     border-style: solid; /* Ensure the border is solid */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
         }
-        
 .stButton>button:hover {
     background-color: #FF69B4; /* Change background color on hover to HotPink */
     color: #FFFFFF; /* Change text color on hover to white */
